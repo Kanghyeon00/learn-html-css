@@ -20,6 +20,8 @@
             id="userName"
             required
             placeholder="예)강석현"
+            maxlength="4"
+            minlength="2"
           />
         </div>
         <div>
@@ -39,7 +41,52 @@
           <label for="userEmail">이메일</label>
           <input type="email" id="userEmail" name="userEmail" />
         </div>
+        <div>
+          <label for="userPhone">연락처</label>
+          <input type="tel" id="userPhone" name="userPhone" />
+        </div>
         <input type="submit" value="전송" />
+        <div>
+          <input
+            type="checkbox"
+            value="html"
+            name="classLikelion"
+            id="classHtml"
+          />
+          <label for="classHtml">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="css"
+            name="classLikelion"
+            id="classCss"
+          />
+          <label for="classCss">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" value="js" name="classLikelion" id="classJs" />
+          <label for="classJs">JS</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="classRoom1"
+            name="classRoom"
+            id="classRoom1"
+          />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            value="classRoom2"
+            name="classRoom"
+            id="classRoom2"
+          />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
       </fieldset>
     </form>
   </body>
