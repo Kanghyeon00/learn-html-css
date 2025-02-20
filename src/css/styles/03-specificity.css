@@ -1,0 +1,15 @@
+h1 {
+  font-size: 1em;
+}
+
+body p {
+  background-color: yellow;
+}
+
+p {
+  background-color: lime;
+}
+
+.ai {
+  background-color: orange;
+}

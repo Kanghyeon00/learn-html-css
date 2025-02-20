@@ -1,0 +1,66 @@
+body {
+  background-color: #ffc;
+}
+
+p {
+  color: red;
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    border: 10px solid red;
+  }
+}
+
+.like {
+  color: green;
+}
+
+#lion {
+  color: blue;
+}
+
+[title] {
+  color: purple;
+}
+
+a[href^='https'] {
+  text-decoration: none;
+}
+
+a[href$='pdf'] {
+  background-color: violet;
+}
+
+/* 가상 클래스 선택자 */
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: olive;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:focus {
+  color: aqua;
+}
+
+a:active {
+  color: chartreuse;
+}
+
+/* 가상 요소 선택자 */
+
+h1::before {
+  content: '멋사';
+}
+
+h1::after {
+  content: '13기';
+}
