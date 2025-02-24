@@ -1,1 +1,14 @@
-@import url('/src/common/mini-reset.css');
+@import '/src/common/mini-reset.css';
+
+body {
+  margin: 50px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+/* 알림 */
+.notification {
+  background-color: yellow;
+}

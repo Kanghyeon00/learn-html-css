@@ -5,13 +5,13 @@
     &:hover {
       background-color: pink;
     }
+  }
 
-    .likelion__item {
-      color: green;
-    }
+  .likelion__item {
+    color: green;
+  }
 
-    .likelion__link {
-      color: inherit;
-    }
+  .likelion__link {
+    color: inherit;
   }
 }
