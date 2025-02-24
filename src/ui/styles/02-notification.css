@@ -28,20 +28,29 @@ body {
   border: 2px solid #ececec;
 }
 
+/* 알림 컨테이너 */
+/* 플렉스는 아직 배우지 않았습니다. */
+/* 컴포넌트를 만들고 배치를 위해 만든 컨테이네어 갭을 주는 방향으로 컴포넌트 간 여백을 주셔야 합니다. */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
 /* 알림 */
 .notification {
   --border-color: var(--silver);
   --text-color: var(--silver);
   --base-spacing: var(--spacing-20);
   --large-spacing: var(--spacing-70);
-  --base-gap: var(--spacing-10);
 
   position: relative;
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
-  background: url(/src/assets/svg/pot.svg) no-repeat var(--base-spacing) 50%;
+  background: no-repeat var(--base-spacing) 50%;
   padding: var(--base-spacing) var(--base-spacing) var(--base-spacing)
     var(--large-spacing);
+  margin-top: var(--base-gap);
 
   .notification-subject {
     font-size: var(--large);
@@ -49,7 +58,6 @@ body {
 
   .notification-time {
     font-size: var(--small);
-    color: var(--green);
     position: absolute;
     top: var(--base-spacing);
     right: var(--base-spacing);
@@ -61,13 +69,17 @@ body {
   }
 
   &.green {
-    .notification-subject {
+    background-image: url(/src/assets/svg/pot.svg);
+    .notification-subject,
+    .notification-time {
       color: var(--green);
     }
   }
 
   &.brown {
-    .notification-subject {
+    background-image: url(/src/assets/svg/rice.svg);
+    .notification-subject,
+    .notification-time {
       color: var(--brown);
     }
   }
