@@ -1,5 +1,22 @@
 @import '/src/common/mini-reset.css';
 
+:root {
+  /* 색상 */
+  --green: #22be61;
+  --silver: #929b90;
+  --brown: #e3a368;
+
+  /* 여백 */
+  --spacing-10: 0.625rem;
+  --spacing-20: 1.25rem;
+  --spacing-70: 4.375rem;
+
+  /* 글자 크기 */
+  --large: 1.125rem;
+  --medium: 0.875rem;
+  --small: 0.75rem;
+}
+
 body {
   margin: 50px;
 }
@@ -11,14 +28,47 @@ body {
   border: 2px solid #ececec;
 }
 
-img {
-  width: 3rem;
-}
+/* 알림 */
+.notification {
+  --border-color: var(--silver);
+  --text-color: var(--silver);
+  --base-spacing: var(--spacing-20);
+  --large-spacing: var(--spacing-70);
+  --base-gap: var(--spacing-10);
 
-span {
-  color: rgb(0, 185, 0);
-}
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: url(/src/assets/svg/pot.svg) no-repeat var(--base-spacing) 50%;
+  padding: var(--base-spacing) var(--base-spacing) var(--base-spacing)
+    var(--large-spacing);
 
-p {
-  color: #777777;
+  .notification-subject {
+    font-size: var(--large);
+  }
+
+  .notification-time {
+    font-size: var(--small);
+    color: var(--green);
+    position: absolute;
+    top: var(--base-spacing);
+    right: var(--base-spacing);
+  }
+
+  .notification-content {
+    font-size: var(--medium);
+    margin-top: var(--base-gap);
+  }
+
+  &.green {
+    .notification-subject {
+      color: var(--green);
+    }
+  }
+
+  &.brown {
+    .notification-subject {
+      color: var(--brown);
+    }
+  }
 }
