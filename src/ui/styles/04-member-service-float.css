@@ -1,0 +1,44 @@
+body {
+  font-family: 'SUIT', sans-serif;
+  margin: 0;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  background-color: yellow;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.item.first:before {
+  content: '';
+}
+
+.item:before {
+  content: '|';
+  padding: 15px;
+}
+
+/* 멤버 링크 */
+.member-link {
+  background-color: saddlebrown;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  float: right;
+}
+
+li {
+  display: inline-block;
+}
+
+span {
+  padding: 0 15px;
+}
