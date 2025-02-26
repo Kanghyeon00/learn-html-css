@@ -21,6 +21,7 @@ body{
     /* background: skyblue; */
     font-size: 1.5rem;
     font-weight: 600;
+    line-height: 0.9;
     
     span{
       vertical-align: top;
@@ -28,8 +29,8 @@ body{
       &[lang="en"]{
         font-size: 0.5em;
         /* background: yellow; */
-        position: relative;
-        top: 2px;
+        /* position: relative;
+        top: 2px; */
       }
     }
   }

@@ -33,10 +33,24 @@ body{
     content:"|";
     margin: 0 0.5em;
   }
+
+  &::after{
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
+
+hr{
+  clear: both;
+}
+
+
 
 /* 멤버 링크 */
 .member-link{
+  margin-top: 100px;
+  clear: both;
   border:1px solid red;
   display: flow-root;
 
