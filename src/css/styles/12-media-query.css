@@ -1,24 +1,25 @@
 @import "/src/common/best-reset.css";
 @import "/src/common/a11y.css";
 
-/* 기본적으로 적용될 배경색 - blue */
+/* 기본적으로 적용될 배경색 - yellow */
 body {
-  background: blue;
-}
+  background: yellow;
+  font-size: 1.5rem;
 
-/* 뷰포트(600px) 크기에 따라 적용될 배경색 - pink */
-@media (min-width: 600px){
-  body{
+  /* 뷰포트(600px) 크기에 따라 적용될 배경색 - pink */
+  @media (min-width: 600px){
     background: pink;
+    font-size: 2rem;
+  }
+
+  /* 뷰포트(1200px) 크기에 따라 적용될 배경색 - pink */
+  @media (min-width: 1000px){
+    background: lime;
+    font-size: 2.5rem;
   }
 }
 
-/* 뷰포트(1200px) 크기에 따라 적용될 배경색 - pink */
-@media (min-width: 1000px){
-  body{
-    background: lime;
-  }
-}
+
 
 
 /* 가로 보기모드에서 적용될 배경색 - orange */
