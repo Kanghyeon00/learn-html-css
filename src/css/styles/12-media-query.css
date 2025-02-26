@@ -9,7 +9,7 @@ body {
   font-size: clamp(.75rem, 2vw, 2rem);
 
   /* 뷰포트(600px) 크기에 따라 적용될 배경색 - pink */
-  @media (min-width: 600px){
+  @media (min-width: 600px) and (max-width: 800px){
     background: pink;
   }
 
