@@ -1,0 +1,6 @@
+@import "/src/common/best-reset.css";
+@import "/src/common/a11y.css";
+
+body {
+  background: yellow;
+}
