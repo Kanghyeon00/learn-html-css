@@ -2,6 +2,39 @@
 @import '/src/common/theme.css';
 
 /* 플렉스를 활용한 반응형 레이아웃 */
+/* 플렉스 컨테이너 */
+.container {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row wrap;
+
+    .header,
+    .navigation,
+    .footer {
+      width: 100%;
+      inline-size: 100%;
+    }
+
+    .content,
+    .sidebar {
+      width: 50%;
+      inline-size: 50%;
+      height: 65vh;
+      block-size: 65vh;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .navigation,
+    .sidebar {
+      width: 25%;
+      inline-size: 25%;
+      height: 65vh;
+      block-size: 65vh;
+    }
+  }
+}
+
 /* 헤더 */
 .header {
   background: var(--pastel-coral);
@@ -12,21 +45,6 @@
 .navigation {
   background: var(--pastel-green);
   height: 15vh;
-}
-
-/* 메인 콘텐츠와 사이드바 그룹(.wrapper) */
-.wrapper {
-  border: 10px solid red;
-
-  @media (min-width: 768px) {
-    display: flex;
-
-    .content,
-    .sidebar {
-      flex: 1 0 0;
-      block-size: 65vh;
-    }
-  }
 }
 
 /* 메인 콘텐츠 */
