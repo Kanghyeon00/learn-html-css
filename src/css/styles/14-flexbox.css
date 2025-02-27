@@ -25,7 +25,9 @@ body *::after {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  align-content: space-evenly;
+  align-content: center;
+  /* row-gap, column-gap을 함께 지장할 수 있는 단축 속성 */
+  gap: 20px 40px;
 
   [class*='item'] {
     /* margin-block: 10px; */
@@ -34,7 +36,7 @@ body *::after {
     /* inline-size: 100px;
     block-size: 100px; */
     text-align: center;
-    align-content: center;
+    /* align-content: center; */
     /* 기존에 세로 기준 가운데 정렬을 지원하지 않을 때 사용하던 트릭 */
     /* line-height: 100px; */
   }
