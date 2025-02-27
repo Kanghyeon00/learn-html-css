@@ -1,5 +1,10 @@
 @import '/src/common/theme.css';
 
+html,
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
 body *,
 body *::before,
 body *::after {
@@ -13,17 +18,21 @@ body *::after {
   /* flex-direction: row;
   flex-wrap: nowrap; */
   /* flex-direction 속성과 flex-wrap 속성을 단축해서 지정할 때 */
-  flex-flow: row nowrap;
   border: 1px solid red;
-  padding: 10px;
-  inline-size: 422px;
+  /* padding: 10px; */
+  inline-size: 622px;
+  block-size: 522px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
 
   [class*='item'] {
-    margin-block: 10px;
+    /* margin-block: 10px; */
     border: 1px solid currentColor;
     background: var(--pastel-yellow);
-    inline-size: 100px;
-    block-size: 100px;
+    /* inline-size: 100px;
+    block-size: 100px; */
     text-align: center;
     align-content: center;
     /* 기존에 세로 기준 가운데 정렬을 지원하지 않을 때 사용하던 트릭 */
@@ -31,9 +40,11 @@ body *::after {
   }
 
   .item1 {
-    inline-size: 200px;
+    /* inline-size: 200px; */
+    font-size: 48px;
   }
 
   .item2 {
+    font-size: 30px;
   }
 }
