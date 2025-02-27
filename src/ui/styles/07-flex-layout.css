@@ -8,6 +8,11 @@
     display: flex;
     flex-flow: row wrap;
 
+    .box,
+    .wrapper {
+      display: contents;
+    }
+
     .header,
     .navigation,
     .footer {
