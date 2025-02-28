@@ -2,4 +2,39 @@
 @import '/src/common/theme.css';
 @import '/src/ui/components/avatar/avatar.css';
 
+body {
+  margin: 50px;
+}
+
+h1 {
+  margin-block: 20px;
+}
+
 /* Stacking context */
+/* case 1 */
+.case-01 {
+  background: yellow;
+  /* display: flex; */
+  flex-flow: row nowrap;
+
+  .button-avatar {
+    margin-right: -20px;
+    position: static;
+    transition: rotate 3s;
+
+    &:hover,
+    &:focus {
+      /* 아바타의 겹치는 순서를 제어하기 위해 0보다 큰 값 지정 */
+      /* position이 static이 아닐 경우 가능 (z-index) */
+      /* z-index: 10; */
+      /* transform: scale(1.5); */
+      /* opacity: 0.8; */
+      /* translate:0 -20px; */
+      rotate: 3turn;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
