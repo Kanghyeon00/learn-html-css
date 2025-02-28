@@ -8,13 +8,10 @@ body {
 h1 {
   text-align: center;
   color: #333;
+  position: sticky;
+  top: 0;
   padding: 1rem;
   background: #fff;
-  position: sticky;
-  /* top: 0;의 논리 속성은 inset-block-start */
-  inset-block-start: 0;
-  /* 겹치는 순서를 제어 */
-  z-index: 1;
 }
 
 .container {
@@ -29,9 +26,9 @@ h1 {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background: #fff;
+    top: 80px;
     position: sticky;
     top: 80px;
-    inset-block-start: 80px;
   }
 
   .team-header {
@@ -46,10 +43,10 @@ h1 {
 
   li {
     padding: 1rem;
-    border-block-end: 1px solid var(--pastel-gray);
+    border-bottom: 1px solid var(--pastel-gray);
   }
 
   li:last-child {
-    border-block-end: none;
+    border-bottom: none;
   }
 }
