@@ -10,6 +10,9 @@ h1 {
   color: #333;
   padding: 1rem;
   background: #fff;
+  position: sticky;
+  top: 0;
+  inset-block-start: 0;
 }
 
 .container {
@@ -24,6 +27,9 @@ h1 {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     background: #fff;
+    position: sticky;
+    top: 5rem;
+    inset-block-start: 5rem;
   }
 
   .team-header {
