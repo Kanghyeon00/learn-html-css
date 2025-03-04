@@ -28,20 +28,11 @@
     appearance: none;
   }
 
-  /* .checkbox 내 input 요소를 선택
-  input{
-    position: absolute;
-    top: 0;
-    inset-block-start: 0;
-    left: 0;
-    inset-inline-start: 0;
-    margin: 0;
-    width: var(--size);
-    inline-size: var(--size);
-    height: var(--size);
-    block-size: var(--size);
-    appearance: none;
-  } */
+  input:focus{
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--blue-900);
+    border-radius: var(--rounded-xs);
+  }
 
   label.bg-img{
     background: url(/src/assets/naver/unchecked.svg) no-repeat;
