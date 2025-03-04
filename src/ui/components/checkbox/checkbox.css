@@ -61,6 +61,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: .375rem;
+  position: relative;
 
   input{
     position: absolute;
