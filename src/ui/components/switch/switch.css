@@ -14,7 +14,6 @@
   justify-content: end;
   width: var(--size);
   inline-size: var(--size);
-  background: yellow;
 
   input{
     position: absolute;
@@ -46,7 +45,7 @@
 
 /* 슬라이드 버튼 유형의 스위치 컴포넌트 */
 .toggle-switch {
-  --size: 24px;
+  --size: 4rem;
 
   display:inline-flex;
   width: var(--size);
@@ -66,7 +65,7 @@
     box-shadow: 0 0 0 1px var(--blue-900);
   }
   
-   input{
+   /* input{
     margin: 0;
     appearance: none;
     position:absolute;
@@ -78,22 +77,43 @@
     width: calc(50% - 1px);
     inline-size: calc(50% - 1px);
     aspect-ratio: 1 / 1;
-    background:#fff;
+    background: var(--white);
     border-radius: 50%;
 
     &:checked{
       translate: calc(100% + 2px) 0;
     }
-
-    &:focus{
-      outline: 0;
-    }
-  }
+  } */
   
-   label{
+   /* label{
     width: 100%;
     inline-size: 100%;
     height: 100%;
     block-size: 100%;
+  } */
+
+  input{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    appearance: none;
+  }
+  
+  label{
+    width: calc(50% - 1px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    border-radius: 50%;
+    transition: translate 0.3s;
+  }
+
+  input:checked + label{
+    translate: calc(100% + 2px) 0;
   }
 }
