@@ -2,3 +2,9 @@
 @import '/src/common/login-theme.css';
 @import '/src/common/a11y.css';
 @import '/src/common/base.css';
+
+fieldset{
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
