@@ -45,7 +45,7 @@
 
 /* 슬라이드 버튼 유형의 스위치 컴포넌트 */
 .toggle-switch {
-  --size: 4rem;
+  --size: 3rem;
 
   display:inline-flex;
   width: var(--size);
