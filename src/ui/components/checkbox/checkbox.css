@@ -11,7 +11,24 @@
   height: var(--size);
   block-size: var(--size);
   position: relative;
+  font-size: var(--font-md);
 
+  /* .checkbox 컨테이너 안에 자식 요소 중 .bg-img 클래스가 있을 경우 input 요소를 선택 */
+  &:has(.bg-img) input{
+    position: absolute;
+    top: 0;
+    inset-block-start: 0;
+    left: 0;
+    inset-inline-start: 0;
+    margin: 0;
+    width: var(--size);
+    inline-size: var(--size);
+    height: var(--size);
+    block-size: var(--size);
+    appearance: none;
+  }
+
+  /* .checkbox 내 input 요소를 선택
   input{
     position: absolute;
     top: 0;
@@ -19,13 +36,12 @@
     left: 0;
     inset-inline-start: 0;
     margin: 0;
-    /* z-index: -1; */
     width: var(--size);
     inline-size: var(--size);
     height: var(--size);
     block-size: var(--size);
     appearance: none;
-  }
+  } */
 
   label.bg-img{
     background: url(/src/assets/naver/unchecked.svg) no-repeat;
