@@ -30,3 +30,32 @@
   background: var(--pastel-lavender);
   height: 10vh;
 }
+
+/* 그리드를 활용한 반응형 레이아웃 */
+/* 그리드 컨테이너 */
+.container{
+  display: grid;
+
+  /* grid item은 order 속성을 활용하여 배치 순서를 변경할 수 있다. 
+  .navigation{
+    order: 1;
+  } */
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(12, 1fr);
+
+    .header, .navigation, .footer{
+      grid-column: 1 / -1;
+    }
+
+    .content, .sidebar{
+      grid-column: span 6;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .navigation, .sidebar{
+      grid-column: span 3;
+    }
+  }
+}
