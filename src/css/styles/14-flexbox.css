@@ -1,4 +1,5 @@
 @import '/src/common/theme.css';
+@import "/src/common/base.css";
 
 html,
 body {

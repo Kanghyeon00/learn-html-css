@@ -1,4 +1,6 @@
 @import "/src/common/theme.css";
+@import "/src/common/base.css";
+
 body{
   margin: 100px;
 }

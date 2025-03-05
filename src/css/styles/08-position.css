@@ -1,4 +1,5 @@
 @import "/src/common/mini-reset.css";
+@import "/src/common/base.css";
 
 body{
   margin: 50px;

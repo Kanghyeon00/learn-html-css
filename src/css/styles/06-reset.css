@@ -1,4 +1,5 @@
 @import "/src/common/best-reset.css";
+@import "/src/common/base.css";
 
 ul{
   margin-left: 50px;

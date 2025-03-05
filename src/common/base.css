@@ -1,3 +1,11 @@
+@view-transition{
+  navigation: auto;
+}
+
+::view-transition-group(root){
+  animation-duration: 1s;
+}
+
 /* body 스타일 */
 body {
   font-family: 'SUIT', sans-serif;

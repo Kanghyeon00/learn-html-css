@@ -1,3 +1,5 @@
+@import "/src/common/base.css";
+
 /* body 요소의 배경색상 지정 */
 body {
   background-color: yellow;
