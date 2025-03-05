@@ -35,9 +35,35 @@
 
 /* 로그인 폼 */
 .login-form{
-  background: pink;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: var(--spacing-5);
+
+  fieldset{
+    display: contents;
+  }
 
   .checkbox-wrapper{
-    background: yellow;
+    order: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: start;
+
+    .text-link{
+      margin-left: auto;
+      margin-inline-start: auto;
+    }
+  }
+
+  .button{
+    margin-top: var(--spacing-3);
+    margin-block-start: var(--spacing-3);
+    height: 3.75rem;
+    block-size: 3.75rem;
+
+    &:focus-visible{
+      box-shadow: 0 0 0 1px var(--red-500);
+    }
   }
 }
