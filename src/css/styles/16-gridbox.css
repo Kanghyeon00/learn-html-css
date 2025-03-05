@@ -1,0 +1,31 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+.grid {
+  div:nth-child(1) {
+    background: var(--pastel-yellow);
+  }
+  div:nth-child(2) {
+    background: var(--pastel-pink);
+  }
+  div:nth-child(3) {
+    background: var(--pastel-lavender);
+  }
+  div:nth-child(4) {
+    background: var(--pastel-lemon);
+  }
+  div:nth-child(5) {
+    background: var(--pastel-gray);
+  }
+  div:nth-child(6) {
+    background: var(--pastel-mint);
+  }
+  div:nth-child(7) {
+    background: var(--pastel-coral);
+  }
+  div:nth-child() {
+    background: var(--pastel-aqua);
+  }
+}
