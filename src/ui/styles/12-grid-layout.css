@@ -35,6 +35,7 @@
 /* 그리드 컨테이너 */
 .container{
   display: grid;
+  padding: 0 20px;
 
   /* grid item은 order 속성을 활용하여 배치 순서를 변경할 수 있다. 
   .navigation{
@@ -43,6 +44,9 @@
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(12, 1fr);
+    max-width: 800px;
+    max-inline-size: 800px;
+    margin: 0 auto;
 
     .header, .navigation, .footer{
       grid-column: 1 / -1;
@@ -54,6 +58,9 @@
   }
 
   @media (min-width: 1024px) {
+    max-width: 1280px;
+    max-inline-size: 1280px;
+
     .navigation, .sidebar{
       grid-column: span 3;
     }
