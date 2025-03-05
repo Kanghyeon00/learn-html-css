@@ -16,13 +16,28 @@
 
 /* 헤더 */
 .login-header{
-  padding: 4.375rem 0 2.8125rem;
+  padding: 70px 0 45px;
 
-  @media (min-width: 768px) {
-    padding: 6.25rem 0 3.125rem;
+  @media (min-width: 48rem) {
+    padding: 100px 0 50px;
   }
 
   .logo{
     margin: 0 auto;
+    
+    @media (max-width: 48rem) {
+      width: 11.25rem;
+      inline-size: 11.25rem;
+    }
+
+  }
+}
+
+/* 로그인 폼 */
+.login-form{
+  background: pink;
+
+  .checkbox-wrapper{
+    background: yellow;
   }
 }
