@@ -25,7 +25,7 @@
   div:nth-child(7) {
     background: var(--pastel-coral);
   }
-  div:nth-child() {
+  div:nth-child(8) {
     background: var(--pastel-aqua);
   }
 }
