@@ -33,27 +33,26 @@
   min-height: 100vh;
   min-block-size: 100vh;
   display: grid;
-  grid-template-columns: [full-start] 1fr [content-start like-start] 8fr [content-end] 1fr [full-end like-end];
-  /* grid-template-rows: 1fr 1fr 8fr 1fr 1fr; */
+  grid-template-columns: [full-start] minmax(1rem, 1fr) [content-start] repeat(12, minmax(5.3125rem, 1fr)) [content-end] minmax(1rem, 1fr) [full-end];
   grid-auto-flow: dense;
 
   .header{
-    grid-column: full-start / full-end;
-  }
-
-  .navigation{
-    grid-column: full;
-  }
-
-  .main{
     grid-column: content;
   }
 
-  .sidebar{
-    grid-column: like;
+  .navigation {
+    grid-column: full;
   }
 
-  .footer{
+  .main {
+    grid-column: content;
+  }
+  
+  .sidebar {
+    grid-column: content;
+  }
+
+  .footer {
     grid-column: full;
   }
 }
