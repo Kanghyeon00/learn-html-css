@@ -1,5 +1,6 @@
-@import '/src/common/best-reset.css';
-@import '/src/common/a11y.css';
+@import "/src/common/best-reset.css";
+@import "/src/common/a11y.css";
+@import "/src/common/base.css";
 
 /* 모든 디바이스에 기본적으로 적용될 배경색 - yellow */
 /* 모든 디바이스에 글자크기를 유연하게 설정 - vw 단위 */

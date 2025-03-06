@@ -1,5 +1,8 @@
-.likelion {
-  .likelion__list {
+@import "/src/common/base.css";
+
+.likelion{
+  
+  .likelion__list{
     list-style: none;
 
     &:hover {

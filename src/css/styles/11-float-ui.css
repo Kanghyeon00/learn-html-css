@@ -1,4 +1,5 @@
 @import "/src/common/modern-reset.css";
+@import "/src/common/base.css";
 
 body{
   font-family: SUIT, sans-serif;
