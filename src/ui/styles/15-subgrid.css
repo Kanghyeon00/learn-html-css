@@ -55,4 +55,14 @@ body{
 
 .container{
   /* background: var(--pastel-lavender); */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  grid-template-rows: 200px 1.5rem auto auto;
+  column-gap: 20px;
+
+  .card{
+    display: grid;
+    
+  }
+
 }
