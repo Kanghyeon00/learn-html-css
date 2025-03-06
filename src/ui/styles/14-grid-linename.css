@@ -42,6 +42,15 @@
 
   .navigation {
     grid-column: full;
+    display: grid;
+    grid-template-columns: subgrid;
+    
+
+    .menu{
+      background: var(--pastel-dark-blue);
+      grid-column: content;
+    }
+
   }
 
   .main {
