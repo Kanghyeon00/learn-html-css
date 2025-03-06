@@ -3,6 +3,7 @@
 @import '/src/common/a11y.css';
 @import '/src/common/base.css';
 
+/* 다단 레이아웃을 적용한 컨테이너 */
 .container{
   background: var(--pastel-lavender);
   padding: 1em;
@@ -55,4 +56,14 @@
   }
 
 
+}
+
+.wrapper{
+  background: var(--pastel-lemon);
+  padding: 1em;
+  columns: 4;
+  
+  .case{
+    break-after: avoid;
+  }
 }
