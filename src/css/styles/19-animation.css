@@ -95,14 +95,13 @@ body{
 /* Shake Animation */
 @keyframes shake {
   0%, 100% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   50% {
     transform: translateX(-15px);
   }
 }
 .case-04 .target-animation {
-  /* 애니메이션 정의는 하되 초기 상태는 paused */
   animation: shake 1.5s infinite ease-in-out;
   animation-play-state: paused;
 }
