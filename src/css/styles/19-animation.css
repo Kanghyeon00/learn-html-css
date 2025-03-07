@@ -24,4 +24,41 @@ body{
 .case{
   border: 1px solid light-dark(#000, #fff);
   padding: 2.5rem;
+
+  button{
+    border-radius: .5rem;
+    padding: 0.5em 1em;
+  }
+
+  .toggle-animation {
+    background-color: #4263eb;
+  }
+  
+  .toggle-animation.paused {
+    background-color: #e03131;
+  }
+
+  .reset-animation {
+    background-color: #15aabf;
+  }
+
+  .target-animation {
+    margin-top: 2.5rem;
+    margin-block-start: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    align-content: center;
+    padding: .625rem;
+    border-radius: .5rem;
+    background: linear-gradient(135deg, #37b24d, #2b8a3e);
+  }
+}
+
+/* Fade Animation */
+@keyframes fade {
+  0%{ opacity: 1; }
+  100%{ opacity: 0; }
+}
+.case-01 .target-animation{
+  animation-name: fade;
 }
