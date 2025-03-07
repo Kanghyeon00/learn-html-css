@@ -91,3 +91,28 @@ body{
   animation: bounce 2s infinite ease-in-out;
   animation-play-state: paused;
 }
+
+/* Shake Animation */
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}
+.case-04 .target-animation {
+  /* 애니메이션 정의는 하되 초기 상태는 paused */
+  animation: shake 1.5s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  0% { }
+  100% { }
+}
+.case-05 .target-animation {
+  animation: spin 1.5s infinite ease-in-out;
+  animation-play-state: paused;
+}
