@@ -67,4 +67,7 @@ body{
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   /* animation-direction: alternate; */
+  
+  animation: fade 3s infinite 1s linear both;
+  animation-play-state: paused;
 }
