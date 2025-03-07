@@ -118,7 +118,6 @@ body {
   }
 }
 .case-04 .target-animation {
-  /* 애니메이션 정의는 하되 초기 상태는 paused */
   animation: shake 1.5s infinite ease-in-out;
   animation-play-state: paused;
 }
@@ -126,23 +125,30 @@ body {
 /* Spin Animation */
 @keyframes spin {
   0% {
+    rotate: 0turn;
   }
   100% {
+    rotate: 1turn;
   }
 }
 .case-05 .target-animation {
-  animation: spin 1.5s infinite ease-in-out;
+  animation: spin 1.5s infinite linear;
   animation-play-state: paused;
+  width: 9.375rem;
+  inline-size: 9.375rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: conic-gradient(red, green, red);
 }
 
 /* Pulse Ainimation */
 @keyframes pulse {
   0%,
   100% {
-    transform: scale(1.1);
+    scale: 1 1;
   }
   50% {
-    transform: scale(0);
+    scale: 1.1 1.1;
   }
 }
 .case-06 .target-animation {
@@ -150,17 +156,17 @@ body {
   animation-play-state: paused;
 }
 
+/* Flip Animation */
 @keyframes flip {
   0% {
-    transform: perspective(100px) rotateY(0);
+    transform: perspective(400px) rotateY(0);
   }
   100% {
-    transform: perspective(2000px) rotateY(360deg);
+    transform: perspective(400px) rotateY(360deg);
   }
 }
-
 .case-07 .target-animation {
-  animation: flip 1.5s infinite ease-in-out;
+  animation: flip 2s infinite ease-in-out;
   animation-play-state: paused;
 }
 
@@ -190,6 +196,7 @@ body {
   animation: wobble 2s infinite ease-in-out;
   animation-play-state: paused;
 }
+
 /* Glow Animation */
 @keyframes glow {
   0%,
@@ -203,6 +210,11 @@ body {
 .case-09 .target-animation {
   animation: glow 2s infinite ease-in-out;
   animation-play-state: paused;
+}
+@property --rotation {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
 }
 
 @keyframes rotate {
@@ -221,6 +233,7 @@ body {
   &::before,
   &::after {
     --rotation: 0deg;
+
     box-sizing: content-box;
     content: '';
     position: absolute;
@@ -228,7 +241,17 @@ body {
     height: 100%;
     inset: 50%;
     translate: -50% -50%;
-    background: conic-gradient(from var(--rotation), red, blue, red);
+    background: conic-gradient(
+      from var(--rotation),
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      darkblue,
+      purple,
+      red
+    );
     padding: 1px;
     z-index: -1;
     border-radius: 8px;
