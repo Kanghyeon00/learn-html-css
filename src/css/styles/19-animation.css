@@ -71,3 +71,23 @@ body{
   animation: fade 3s infinite 1s linear both;
   animation-play-state: paused;
 }
+
+/* Shrink Animation */
+@keyframes shrink {
+  0%, 100%{ width: 100%; }
+  50%{ width: 50%; }
+}
+.case-02 .target-animation{
+  animation: shrink 2s infinite ease-in-out both;
+  animation-play-state: paused;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100%{ translate: 0 0 ;}
+  50%{ translate: 0 -20px ; }
+}
+.case-03 .target-animation{
+  animation: bounce 2s infinite ease-in-out;
+  animation-play-state: paused;
+}
