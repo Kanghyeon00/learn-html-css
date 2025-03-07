@@ -1,23 +1,27 @@
-@import url('/src/css/styles/');
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+@import "/src/ui/components/button/button.css";
 
-:root {
+:root{
   color-scheme: light dark;
 }
 
-body {
+body{
   margin: 20px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
-  grid-auto-rows: 18.75rem;
-  gap: 1.25rem;
   background: light-dark(#fff, #000);
   color: light-dark(#000, #fff);
 }
 
-.case {
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  grid-auto-rows: 18.75rem;
+  gap: 1.25rem;
+}
+
+.case{
   border: 1px solid light-dark(#000, #fff);
   padding: 2.5rem;
 }

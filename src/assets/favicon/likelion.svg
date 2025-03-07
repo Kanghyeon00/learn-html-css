@@ -1,4 +1,5 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="65.px" height="64px" viewBox="0 0 65.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+<<<<<<< HEAD
 <style>
   g{
     color: #000;
@@ -11,6 +12,20 @@
   <rect width="100%" height="100%" fill="#F3792D" />
   <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
     fill="currentColor" stroke="none">
+=======
+  <style>
+    g{
+      fill: #000;
+
+      @media (prefers-color-scheme: dark) {
+        fill: #fff;
+      }
+    }
+  </style>
+  <rect width="100%" height="100%" fill="#F3792D" />
+  <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)"
+    fill="none" stroke="none">
+>>>>>>> fa2b1f64442c20bf4b8d7ccb0423ccc78a750f52
     <path d="M142 402 l78 -47 0 -82 0 -83 110 0 110 0 0 30 0 29 -92 3 -93 3 -3
     98 -3 97 -92 0 -92 0 77 -48z"/>
     <path d="M440 405 c0 -25 3 -45 8 -45 4 0 39 21 77 45 l70 45 -77 0 -78 0 0
