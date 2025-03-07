@@ -17,6 +17,7 @@ h2 {
   container-type: inline-size;
   container-name: item;
 }
+
 /* 카드 컴포넌트 */
 .card {
   border: 1px solid var(--pastel-gray);
@@ -24,28 +25,21 @@ h2 {
   padding: 1rem;
   box-shadow: 0 0 8px 1px var(--pastel-gray);
   display: grid;
-  flex-flow: column nowrap;
   gap: 20px;
 
   @container item (min-width: 576px) {
-    grid-template-columns: 3fr 7fr;
-    grid-template-areas:
-      'thumbnail subject'
-      'thumbnail content'
-      'thumbnail more';
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 'thumbnail subject' 'thumbnail content' 'thumbnail more';
 
     .thumbnail {
       grid-area: thumbnail;
     }
-
     .subject {
       grid-area: subject;
     }
-
     .content {
       grid-area: content;
     }
-
     .more {
       grid-area: more;
     }
