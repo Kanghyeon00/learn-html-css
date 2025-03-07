@@ -1,0 +1,14 @@
+select {
+  width: 7rem;
+  height: 2rem;
+  appearance: none;
+  background-image: url(/src/assets/icon/triangle.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color: grey;
+  background-color: transparent;
+  text-align: center;
+}
