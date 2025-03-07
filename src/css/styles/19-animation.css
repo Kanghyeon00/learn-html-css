@@ -115,3 +115,50 @@ body{
   animation: spin 1.5s infinite ease-in-out;
   animation-play-state: paused;
 }
+
+/* Pulse Ainimation */
+@keyframes pulse {
+  0%, 100% { }
+  50% { }
+}
+.case-06 .target-animation {
+  animation: pulse 1.5s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+/* Flip Animation */
+@keyframes flip {
+  0% {
+      
+  }
+  100% {
+      
+  }
+}
+.case-07 .target-animation {
+  animation: flip 2s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+/* Wobble Animation */
+@keyframes wobble {
+  
+}
+.case-08 .target-animation {
+  animation: wobble 2s infinite ease-in-out;
+  animation-play-state: paused;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0%, 100% {
+      
+  }
+  50% {
+      
+  }
+}
+.case-09 .target-animation {
+  animation: glow 2s infinite ease-in-out;
+  animation-play-state: paused;
+}
