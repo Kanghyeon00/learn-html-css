@@ -2,9 +2,16 @@
 @import '/src/common/theme.css';
 @import '/src/common/a11y.css';
 @import '/src/common/base.css';
+@import "/src/ui/components/button/button.css";
+
+:root{
+  color-scheme: light dark;
+}
 
 body{
   margin: 20px;
+  background: light-dark(#fff, #000);
+  color: light-dark(#000, #fff);
 }
 
 .container{
@@ -14,3 +21,7 @@ body{
   gap: 1.25rem;
 }
 
+.case{
+  border: 1px solid light-dark(#000, #fff);
+  padding: 2.5rem;
+}
